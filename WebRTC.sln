@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter01.1-Begin WebRTC", "Chapter01.1-Begin WebRTC\Chapter01.1-Begin WebRTC.csproj", "{A58947D7-FBE9-4B9F-909D-5D10DF3D291F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter02.1-Truyen_Tai_Video_RTCPeerConnection", "Chapter02.1-Truyen_Tai_Video_RTCPeerConnection\Chapter02.1-Truyen_Tai_Video_RTCPeerConnection.csproj", "{88DABD2D-F0BF-430A-B8A1-B4118C31BB3D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{A58947D7-FBE9-4B9F-909D-5D10DF3D291F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A58947D7-FBE9-4B9F-909D-5D10DF3D291F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A58947D7-FBE9-4B9F-909D-5D10DF3D291F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88DABD2D-F0BF-430A-B8A1-B4118C31BB3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88DABD2D-F0BF-430A-B8A1-B4118C31BB3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88DABD2D-F0BF-430A-B8A1-B4118C31BB3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88DABD2D-F0BF-430A-B8A1-B4118C31BB3D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
