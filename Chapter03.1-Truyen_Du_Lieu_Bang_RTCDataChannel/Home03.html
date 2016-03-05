@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
@@ -10,17 +10,13 @@
     <title>WebRTC codelab: Session 04</title>
 
     <style>
-        #dataChannelSend, #dataChannelReceive {
-            width: 500px;
-            height: 500px;
-        }
     </style>
 
 </head>
 
 <body>
 
-    <textarea id="dataChannelSend"  placeholder="Press Start, enter some text, then press Send."></textarea>
+    <textarea id="dataChannelSend"  placeholder="Press Start, enter some text, then press Send.">abc</textarea>
     <textarea id="dataChannelReceive" disabled></textarea>
 
     <div id="buttons">
@@ -29,21 +25,21 @@
         <button id="closeButton">Stop</button>
     </div>
 
+    <!---------------Code Script--------------->
     <script>
-        //Khai báo các biến và gán sự kiện
         var sendChannel, receiveChannel;
 
         var startButton = document.getElementById("startButton");
         var sendButton = document.getElementById("sendButton");
         var closeButton = document.getElementById("closeButton");
         startButton.disabled = false;
-        sendButton.disabled = false;
-        closeButton.disabled = false;
+        sendButton.disabled = true;
+        closeButton.disabled = true;
         startButton.onclick = createConnection;
         sendButton.onclick = sendData;
         closeButton.onclick = closeDataChannels;
 
-        //gửi dữ liệu lên kênh truyền
+        //GỬI DỮ liệu lên kênh
         function trace(text) {
             console.log((performance.now() / 1000).toFixed(3) + ": " + text);
         }
@@ -51,13 +47,13 @@
         function createConnection() {
             var servers = null;
             window.localPeerConnection = new webkitRTCPeerConnection(servers,
-            { optional: [{ RtpDataChannels: true }] });
+            { optional: [] });
             trace('Created local peer connection object localPeerConnection');
 
             try {
                 // Reliable Data Channels not yet supported in Chrome
                 sendChannel = localPeerConnection.createDataChannel("sendDataChannel",
-                  { reliable: false });
+                  { reliable: true });
                 trace('Created send data channel');
             } catch (e) {
                 alert('Failed to create data channel. ' +
@@ -69,25 +65,26 @@
             sendChannel.onclose = handleSendChannelStateChange;
 
             window.remotePeerConnection = new webkitRTCPeerConnection(servers,
-            { optional: [{ RtpDataChannels: true }] });
+            { optional: [] });
             trace('Created remote peer connection object remotePeerConnection');
 
             remotePeerConnection.onicecandidate = gotRemoteIceCandidate;
             remotePeerConnection.ondatachannel = gotReceiveChannel;
 
-            localPeerConnection.createOffer(gotLocalDescription);
+            localPeerConnection.createOffer(gotLocalDescription, null);
             startButton.disabled = true;
             closeButton.disabled = false;
         }
 
-        //send Data
+        //send
         function sendData() {
             var data = document.getElementById("dataChannelSend").value;
+            
             sendChannel.send(data);
             trace('Sent data: ' + data);
         }
 
-        //đóng kênh truyền dữ liệu
+        //close Data Channels
         function closeDataChannels() {
             trace('Closing data channels');
             sendChannel.close();
@@ -108,7 +105,7 @@
             dataChannelSend.placeholder = "Press Start, enter some text, then press Send.";
         }
 
-        //xử lý peer connection
+        //
         function gotLocalDescription(desc) {
             localPeerConnection.setLocalDescription(desc);
             trace('Offer from localPeerConnection \n' + desc.sdp);
@@ -138,7 +135,7 @@
             }
         }
 
-        //nhận dữ liệu từ kênh truyền
+        //
         function gotReceiveChannel(event) {
             trace('Receive Channel Callback');
             receiveChannel = event.channel;
@@ -172,6 +169,7 @@
             var readyState = receiveChannel.readyState;
             trace('Receive channel state is: ' + readyState);
         }
+
     </script>
 
 </body>
