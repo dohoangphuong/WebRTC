@@ -65,13 +65,13 @@
             sendChannel.onclose = handleSendChannelStateChange;
 
             window.remotePeerConnection = new webkitRTCPeerConnection(servers,
-            { optional: [] });
+            { optional: [] });              //-----bỏ cái "{RtpDataChannels: true}" để gửi dữ liệu------
             trace('Created remote peer connection object remotePeerConnection');
 
             remotePeerConnection.onicecandidate = gotRemoteIceCandidate;
             remotePeerConnection.ondatachannel = gotReceiveChannel;
 
-            localPeerConnection.createOffer(gotLocalDescription, null);
+            localPeerConnection.createOffer(gotLocalDescription);
             startButton.disabled = true;
             closeButton.disabled = false;
         }
@@ -79,7 +79,6 @@
         //send
         function sendData() {
             var data = document.getElementById("dataChannelSend").value;
-            
             sendChannel.send(data);
             trace('Sent data: ' + data);
         }
