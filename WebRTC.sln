@@ -15,6 +15,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter03.3-Gui_Anh", "Chap
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter04.1-SendingMessage", "Chapter04.1-SendingMessage\Chapter04.1-SendingMessage.csproj", "{337B6A16-BAD1-461E-94FD-BD66A9C9537D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter05.1-Call Video Server", "Chapter05.1-Call Video Server\Chapter05.1-Call Video Server.csproj", "{D8AF7BBA-3F13-480D-91E3-005C912825DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter05.2-Login Call User", "Chapter05.2-Login Call User\Chapter05.2-Login Call User.csproj", "{DEFEDB1A-F87B-4760-B7C6-C467352CD513}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter05.3-Call Video API", "Chapter05.3-Call Video API\Chapter05.3-Call Video API.csproj", "{37576C47-3700-4684-BF3A-97F8E22988C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter05.4-Call Video Login", "Chapter05.4-Call Video Login\Chapter05.4-Call Video Login.csproj", "{F2BED2CF-FB4F-4117-B194-C92563B12D3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter06.1-Call per to per", "Chapter06.1-Call per to per\Chapter06.1-Call per to per.csproj", "{538D8CE7-3356-435B-BEEC-06BC8345E705}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +55,26 @@ Global
 		{337B6A16-BAD1-461E-94FD-BD66A9C9537D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{337B6A16-BAD1-461E-94FD-BD66A9C9537D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{337B6A16-BAD1-461E-94FD-BD66A9C9537D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8AF7BBA-3F13-480D-91E3-005C912825DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8AF7BBA-3F13-480D-91E3-005C912825DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8AF7BBA-3F13-480D-91E3-005C912825DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8AF7BBA-3F13-480D-91E3-005C912825DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEFEDB1A-F87B-4760-B7C6-C467352CD513}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEFEDB1A-F87B-4760-B7C6-C467352CD513}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEFEDB1A-F87B-4760-B7C6-C467352CD513}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEFEDB1A-F87B-4760-B7C6-C467352CD513}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37576C47-3700-4684-BF3A-97F8E22988C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37576C47-3700-4684-BF3A-97F8E22988C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37576C47-3700-4684-BF3A-97F8E22988C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37576C47-3700-4684-BF3A-97F8E22988C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2BED2CF-FB4F-4117-B194-C92563B12D3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2BED2CF-FB4F-4117-B194-C92563B12D3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2BED2CF-FB4F-4117-B194-C92563B12D3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2BED2CF-FB4F-4117-B194-C92563B12D3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{538D8CE7-3356-435B-BEEC-06BC8345E705}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{538D8CE7-3356-435B-BEEC-06BC8345E705}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{538D8CE7-3356-435B-BEEC-06BC8345E705}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{538D8CE7-3356-435B-BEEC-06BC8345E705}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

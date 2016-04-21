@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\abc\video.com</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Chapter05.2-Login Call User.dll">
+      <publishTime>04/21/2016 02:07:34</publishTime>
+    </File>
+    <File Include="client.js">
+      <publishTime>04/21/2016 01:19:34</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>04/20/2016 16:26:00</publishTime>
+    </File>
+    <File Include="index.html">
+      <publishTime>04/21/2016 00:00:59</publishTime>
+    </File>
+    <File Include="node_modules/bootstrap/dist/css/bootstrap-theme.css">
+      <publishTime>11/24/2015 19:34:20</publishTime>
+    </File>
+    <File Include="node_modules/bootstrap/dist/css/bootstrap-theme.css.map">
+      <publishTime>11/24/2015 19:34:20</publishTime>
+    </File>
+    <File Include="node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
+      <publishTime>11/24/2015 19:34:20</publishTime>
+    </File>
+    <File Include="node_modules/bootstrap/dist/css/bootstrap-theme.min.css.map">
+      <publishTime>11/24/2015 19:34:20</publishTime>
+    </File>
+    <File Include="node_modules/bootstrap/dist/css/bootstrap.css">
+      <publishTime>11/24/2015 19:34:20</publishTime>
+    </File>
+    <File Include="node_modules/bootstrap/dist/css/bootstrap.css.map">
+      <publishTime>11/24/2015 19:34:20</publishTime>
+    </File>
+    <File Include="node_modules/bootstrap/dist/css/bootstrap.min.css">
+      <publishTime>11/24/2015 19:34:20</publishTime>
+    </File>
+    <File Include="node_modules/bootstrap/dist/css/bootstrap.min.css.map">
+      <publishTime>11/24/2015 19:34:20</publishTime>
+    </File>
+    <File Include="node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>11/24/2015 18:59:06</publishTime>
+    </File>
+    <File Include="node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>11/24/2015 18:59:06</publishTime>
+    </File>
+    <File Include="node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>11/24/2015 18:59:06</publishTime>
+    </File>
+    <File Include="node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>11/24/2015 18:59:06</publishTime>
+    </File>
+    <File Include="node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>11/24/2015 18:59:06</publishTime>
+    </File>
+    <File Include="node_modules/bootstrap/dist/js/bootstrap.js">
+      <publishTime>11/24/2015 19:34:20</publishTime>
+    </File>
+    <File Include="node_modules/bootstrap/dist/js/bootstrap.min.js">
+      <publishTime>11/24/2015 19:34:22</publishTime>
+    </File>
+    <File Include="node_modules/bootstrap/dist/js/npm.js">
+      <publishTime>11/24/2015 19:34:22</publishTime>
+    </File>
+    <File Include="server.js">
+      <publishTime>04/20/2016 17:35:33</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>04/21/2016 02:07:35</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
