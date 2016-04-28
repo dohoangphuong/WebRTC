@@ -1,11 +1,3 @@
-// Last time updated: 2016-03-29 8:59:02 AM UTC
-
-// Latest file can be found here: https://cdn.webrtc-experiment.com/DetectRTC.js
-
-// Muaz Khan     - www.MuazKhan.com
-// MIT License   - www.WebRTC-Experiment.com/licence
-// Documentation - github.com/muaz-khan/DetectRTC
-// ____________
 // DetectRTC.js
 
 // DetectRTC.hasWebcam (has webcam device!)

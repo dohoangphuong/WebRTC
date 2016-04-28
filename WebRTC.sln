@@ -25,6 +25,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter05.4-Call Video Logi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter06.1-Call per to per", "Chapter06.1-Call per to per\Chapter06.1-Call per to per.csproj", "{538D8CE7-3356-435B-BEEC-06BC8345E705}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter06.2-Create Rom Call Video AppRTC", "Chapter06.2-Create Rom Call Video AppRTC\Chapter06.2-Create Rom Call Video AppRTC.csproj", "{23056EF1-F801-4868-B1AA-30B5AE6F3023}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter06.3", "Chapter06.3\Chapter06.3.csproj", "{4E0E452C-B1EF-42FD-A959-8762A0571CB5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +79,14 @@ Global
 		{538D8CE7-3356-435B-BEEC-06BC8345E705}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{538D8CE7-3356-435B-BEEC-06BC8345E705}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{538D8CE7-3356-435B-BEEC-06BC8345E705}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23056EF1-F801-4868-B1AA-30B5AE6F3023}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23056EF1-F801-4868-B1AA-30B5AE6F3023}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23056EF1-F801-4868-B1AA-30B5AE6F3023}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23056EF1-F801-4868-B1AA-30B5AE6F3023}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E0E452C-B1EF-42FD-A959-8762A0571CB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E0E452C-B1EF-42FD-A959-8762A0571CB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E0E452C-B1EF-42FD-A959-8762A0571CB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E0E452C-B1EF-42FD-A959-8762A0571CB5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
