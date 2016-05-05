@@ -61,21 +61,21 @@
         color: blue;
         font-weight: bold;
     }
-    table {
+    /*table*/
+    table, td, th {
         border-collapse: collapse;
         width: 100%;
+        border: 1px solid black;
     }
 
     th {
         text-align: center;
         padding: 8px;
     }
-
     td {
         text-align: left;
-        padding: 6px;
+        padding: 8px;
     }
-
     tr:nth-child(even) {
         background-color: #f2f2f2;
     }
@@ -109,7 +109,7 @@
                 </button>
             </div>
             <!-- list of all available broadcasting rooms -->
-            <table id="rooms-list">
+            <table id="rooms-list" style="width:100%">
                 <tr>
                     <th>NAME</th>
                     <th>CONNECT</th>
@@ -148,6 +148,8 @@
 
     if (setupNewBroadcast) setupNewBroadcast.onclick = setupNewBroadcastButtonClickHandler;
 
+    //'https://webrtc.firebaseIO.com/
+
     var config = {
         openSocket: function (config) {
             var channel = config.channel || location.href.replace(/\/|:|#|%|\.|\[|\]/g, '');
@@ -177,7 +179,7 @@
             if (typeof roomsList === 'undefined') roomsList = document.body;
 
             var tr = document.createElement('tr');
-            tr.innerHTML = '<td>Name: <strong>' + room.roomName + '</strong></td>' +
+            tr.innerHTML = '<td><strong>' + room.roomName + '</strong></td>' +
                 '<td><button class="join">Join</button></td>';
             roomsList.insertBefore(tr, roomsList.lastChild);
 
